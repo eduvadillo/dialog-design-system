@@ -1,0 +1,126 @@
+:root {
+  --primary-color: #6e41e2;
+  --secondary-color: #536390;
+  --font-color: #424242;
+  --bg-color: rgb(216, 216, 216);
+  --heading-color: #292922;
+  --text-button: #ffffff;
+  --background-card: #ffffff;
+}
+
+.app-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+}
+
+.app-container button {
+  height: 3rem;
+  width: 8rem;
+  color: var(--text-button);
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  text-align: center;
+  margin-right: 2rem;
+}
+
+.hide-card {
+  display: none;
+}
+
+.show-card {
+  display: flex;
+  opacity: 0;
+  animation: 0.4s showIn;
+  animation-fill-mode: forwards;
+}
+
+.hide-card-again {
+  opacity: 1;
+  animation: 0.4s hideIn;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hideIn {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 10px;
+  background-color: var(--background-card);
+  width: 38rem;
+  height: 26rem;
+  top: 18%;
+  left: 25%;
+  box-shadow: 0 4px 4px rgb(51 51 51 / 40%), 0 4px 16px rgb(51 51 51 / 80%);
+}
+
+.card-container button {
+  height: 3rem;
+  width: auto;
+  color: var(--text-button);
+  background-color: var(--primary-color);
+  border: 3px solid var(--primary-color);
+  border-radius: 10px;
+  text-align: center;
+  margin-right: 0;
+  font-size: 1.5rem;
+}
+
+.card-container h4 {
+  margin-top: 0;
+}
+
+.button-div {
+  display: flex;
+}
+
+.hide-button {
+  display: none;
+}
+
+.card-container button:nth-child(2) {
+  color: var(--primary-color);
+  background-color: var(--text-button);
+  margin-left: 1rem;
+}
+
+.close-card {
+  position: absolute;
+  right: 2rem;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  top: 2rem;
+  background-color: var(--primary-color);
+}
+
+.close-card img {
+  position: absolute;
+  left: 0.6rem;
+  top: 0.6rem;
+}
