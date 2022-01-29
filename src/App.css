@@ -124,3 +124,21 @@
   left: 0.6rem;
   top: 0.6rem;
 }
+
+@media (max-width: 500px) {
+  .card-container {
+    left: 7%;
+    width: 21rem;
+  }
+
+  .app-container button:first-child {
+    margin-left: 2rem;
+  }
+}
+
+@media (max-height: 700px) {
+  .card-container {
+    left: 6%;
+    width: 21rem;
+  }
+}
