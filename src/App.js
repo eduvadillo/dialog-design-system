@@ -1,12 +1,12 @@
 import "./App.css";
-import Buttons from "./components/Buttons.js";
+import Button from "./components/Button.js";
 
 function App() {
   return (
     <div className='app-container'>
-      <Buttons text='¡Cuidado!' />
-      <Buttons text='¡Todo ok!' />
-      <Buttons text='¡Error!' />
+      <Button text='¡Cuidado!' />
+      <Button text='¡Todo ok!' />
+      <Button text='¡Error!' />
     </div>
   );
 }

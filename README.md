@@ -16,4 +16,4 @@ En este reto se propone desarrollar 3 dialogos con contenidos diferentes.
 
 ## Solución adoptada
 
-Pensé en utilzar la libreria SweetAlert2 pero creí más conveniente mostrar habilidades con React y CSS
+He optado por utilizar React y hacer un componente Button y un componente Card. CSS para darle estilo. Pensé en utilizar la librería SweetAlert2, pero me gusto la idea de hacerlo en componentes para poderlo reutilizar

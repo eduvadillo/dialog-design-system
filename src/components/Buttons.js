@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Card from "./Card.js";
 
-function Buttons(props) {
+function Button(props) {
   const [buttonSelected, setButtonSelected] = useState(false);
 
   const handleButton = () => {
@@ -20,4 +20,4 @@ function Buttons(props) {
   );
 }
 
-export default Buttons;
+export default Button;
